@@ -28,11 +28,11 @@ function App() {
       <Router>
         <Routes>
 
-        <Route exact path="/" element={<Homepage setLoginUser={setLoginUser} />} />
+        <Route exact path="/homepage" element={<Homepage setLoginUser={setLoginUser} />} />
 
-        <Route path="/login" element={<Login setLoginUser={setLoginUser}/>} />
+        <Route path="/register" element={<Login setLoginUser={setLoginUser}/>} />
         
-        <Route path="/register" element={<Register />} />
+        <Route path="/" element={<Register />} />
 
         <Route path="/forget" element={<Forget />} />
         <Route path="/project/:projectId" element={<CreateProjectss />} />
